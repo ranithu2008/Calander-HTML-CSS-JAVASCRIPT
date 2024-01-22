@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vh;
+    background-color: blueviolet;
+}
+.el1{
+    display:flex ;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    width:450px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 3px;
+}
+header .current-date{
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+header .current-day{
+    font-size: 1.45rem;
+    font-weight: 500;
+    text-align: center;
+}
+header .icons span{
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+}
+header .icons span:hover{
+    background: #f2f2f2;
+}
+.wrapper header{
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+.calendar{
+    padding: 20px;
+}
+.calendar ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.calendar ul li{
+    position: relative;
+    width: calc(100% / 7 );
+}
+
+.calendar .weeks li{
+    font-weight: 500;
+}
+.calendar .days{
+    margin-bottom: 20px;
+}
+.calendar .days li{
+    cursor: pointer;
+    border: calc(1% / 7 );
+    width: calc(98% / 7 );
+    padding-top: calc(24.5% / 7 );
+    padding-bottom: calc(24.5% / 7 );
+    min-height:40px ;
+    border-color: white;
+    border-style: solid;
+    border-radius: 50%;
+    
+    
+}
+.days li.inactive{
+    color: #aaa;
+}
+.calendar .days .select{
+    border-color: blueviolet;
+}
+.calendar .days .today{
+    background-color: blueviolet;
+    color: white;
+}
+.calendar .days li:hover{
+    background: #f2f2f2;
+}
+.calendar .days li:is(.today):hover{
+    color: black;
+}
+.event{
+    display: flex;
+    padding-left: 30px;
+    border-color: transparent;
+    border-top-color: black;
+    border-style: solid;
+}
+.event p:not(.no-event){
+    color: black;
+}
+.no-event{
+    color: #aaa;
+}
+.new-event{
+    background-color: blueviolet;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.t-event{
+    margin-left: 30px;
+    width: 325px;
+}
+
